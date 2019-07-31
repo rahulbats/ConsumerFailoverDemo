@@ -10,6 +10,7 @@ and for Streams consumers `props.put(StreamsConfig.mainConsumerPrefix(ConsumerCo
 
 Streams consumers need that prefix because `group.id` is not used in Streams but `application.id` is used as consumer group.
 
-This this with replicator running using this [link](https://medium.com/@rahulbats/setup-kafka-multi-data-center-replication-on-kubernetes-172e7cb2311e).
+Run this with Replicator running( Refer this [link](https://medium.com/@rahulbats/setup-kafka-multi-data-center-replication-on-kubernetes-172e7cb2311e) on running Replicator).
+
 After running for a while switch it to your secondary cluster.
 Make sure the consumer resumes from the last offset, consumer read, when it was using the primary cluster. 
